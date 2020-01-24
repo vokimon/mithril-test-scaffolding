@@ -12,7 +12,3 @@ o.spec("MyModel", function() {
 });
 
 // vim: et ts=2 sw=2
-
-
-
-
