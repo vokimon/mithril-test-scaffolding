@@ -7,7 +7,7 @@ var dom = new jsdom.JSDOM("", {
 })
 global.requestAnimationFrame = dom.window.requestAnimationFrame
 
-var context = require.context('./', true, /test.js$/);
+var context = require.context('./', true, /_test.js$/);
 console.log("Test require:", context.keys());
 context.keys().forEach(context);
 module.exports = context;
