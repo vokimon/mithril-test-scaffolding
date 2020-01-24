@@ -1,5 +1,4 @@
 'use strict';
-/*
 var o = require("ospec")
 var MyComponent = require("./mycomponent");
 var mq = require("mithril-query")
@@ -22,5 +21,5 @@ o.spec("MyComponent", function() {
         out.should.contain("day")
     })
 })
-*/
+
 // vim: et ts=2 sw=2
