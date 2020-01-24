@@ -64,13 +64,11 @@ var config = {
 			//chunks: 'all',
 		}
 	},
-	externals: [
-		'child_process',
-	],
 	node: {
 		fs: 'empty',
 		net: 'empty',
 		tls: 'empty',
+		child_process: 'empty',
 	},
 };
 
