@@ -10,6 +10,14 @@ global.requestAnimationFrame = dom.window.requestAnimationFrame
 var context = require.context('./', true, /_test.js$/);
 console.log("Test require:", context.keys());
 context.keys().forEach(context);
+
+// Hacks for ospec
+process.exit = function() {};
+process.stdout = {isTTY: true};
+
+o = require('ospec');
+o.run()
+
 module.exports = context;
 
 
